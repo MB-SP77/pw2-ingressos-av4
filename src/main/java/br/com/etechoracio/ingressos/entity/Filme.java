@@ -1,8 +1,8 @@
 package br.com.etechoracio.ingressos.entity;
 
-import br.com.etechas.ingressos.enums.CategoriaFilmeEnum;
-import br.com.etechas.ingressos.enums.ClassificacaoIndicativaEnum;
-import br.com.etechas.ingressos.enums.SimNaoEnum;
+import br.com.etechoracio.ingressos.enums.CategoriaFilmeEnum;
+import br.com.etechoracio.ingressos.enums.ClassificacaoIndicativaEnum;
+import br.com.etechoracio.ingressos.enums.SimNaoEnum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,5 +1,6 @@
 package br.com.etechoracio.ingressos.entity;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,11 +12,23 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Sala {
-    private Long id;
-    private String nome;
-    private double preco;
-    private LocalDateTime dataExclusao;
 
+@Entity
+@Table(name = "TBL_SALA")
+public class Sala {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_SALA")
+    private Long id;
+
+    @Column(name = "TX_NOME")
+    private String nome;
+
+    @Column(name = "NR_PRECO")
+    private Double preco;
+
+    @Column(name = "DT_EXCLUSAO")
+    private LocalDateTime dataExclusao;
 
 }
